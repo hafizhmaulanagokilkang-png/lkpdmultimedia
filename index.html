@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jelajah Wisata Indonesia</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif;}
+        
+        /* HEADER */
+        header {
+            background: #00f0ff;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {font-size: 32px; margin-bottom: 5px;}
+        header p {font-style: italic;}
+
+        /* MENU NAVIGASI */
+        nav {
+            background: #fef2cc;
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {color: #000; text-decoration: none;}
+        nav a:hover {color: #0066cc;}
+
+        /* KONTEN UTAMA */
+        main {padding: 20px; max-width: 1200px; margin: 0 auto;}
+        h2 {text-align: center; margin: 25px 0 10px; font-size: 22px;}
+        .intro {text-align: center; margin-bottom: 30px; color: #444; font-size: 15px;}
+
+        /* DESTINASI - 3 KOLOM */
+        .destinasi {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .tempat {
+            width: 300px;
+            text-align: center;
+        }
+        .tempat img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .tempat p {font-size: 14px; line-height: 1.5;}
+
+        /* AUDIO & VIDEO */
+        .media-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        audio, video {margin-top: 15px; width: 80%; max-width: 500px;}
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>JELAJAH WISATA INDONESIA</h1>
+    <p>Temukan Keindahan Alam dan Budaya Indonesia</p>
+</header>
+
+<!-- MENU -->
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#">Wisata</a>
+    <a href="#">Galeri</a>
+</nav>
+
+<!-- KONTEN -->
+<main>
+    <h2><img src="10473299.png"width="20"> Beranda</h2>
+    <p class="intro">Selamat datang di website Jelajah Wisata Indonesia. Website ini berisi informasi mengenai beberapa tempat wisata menarik yang ada di Indonesia.<br>Indonesia memiliki banyak sekali destinasi wisata, mulai dari pegunungan, pantai, laut, hingga wisata budaya.</p>
+
+    <h2><img src="9140319.png"width="20">Destinasi Wisata</h2>
+    <p class="intro">Berikut adalah objek wisata menarik di Indonesia</p>
+
+    <div class="destinasi">
+        <div class="tempat">
+            <img src="Rinjani mount.jpg " alt="Gunung Rinjani">
+            <h4>Gunung Rinjani</h4>
+            <p>Gunung Rinjani merupakan gunung yang terkenal dengan keindahan alamnya di Lombok, Nusa Tenggara Barat.</p>
+        </div>
+        <div class="tempat">
+            <img src=" Jambi, Pemandangan Wisata Danau Kerinci_ Wisata Alam Danau Kerinci (1).jpg" alt="Gunung Kerinci">
+            <h4>Gunung Kerinci</h4>
+            <p>Gunung Kerinci merupakan gunung tertinggi di Pulau Sumatra dan berada di Provinsi Jambi.</p>
+        </div>
+        <div class="tempat">
+            <img src="Taman Nasional Bromo Tengger Semeru, Jawa Timur.jpg " alt="Gunung Semeru">
+            <h4>Gunung Semeru</h4>
+            <p>Gunung Semeru merupakan gunung berapi tertinggi di Pulau Jawa yang berada di Jawa Timur.</p>
+        </div>
+    </div>
+
+    <!-- MUSIK -->
+    <div class="media-section">
+        <h2><img src="6707113.png"width="20">Musik Nusantara</h2>
+        <p>Silakan dengarkan musik berikut sambil menikmati informasi wisata Indonesia.</p>
+        <audio controls>
+            <source src=" Pamungkas_-_To_The_Bone_(mp3.pm).mp3" type="audio/mpeg">
+            Browser tidak mendukung audio.
+        
+    </div>
+
+    <!-- VIDEO -->
+    <div class="media-section">
+        <h2><img src="6348671.png"width="20"> Wonderland Indonesia</h2>
+        <p>Silakan menonton video berikut sambil menikmati informasi wisata Indonesia.</p>
+        <video controls>
+            <source src=" ssstik.io_@fikrydjatmiko__1789047391446.mp4" type="video/mp4">
+            Browser tidak mendukung video.
+        </video>
+    </div>
+</main>
+
+</body>
+</html>
